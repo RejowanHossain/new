@@ -24,25 +24,32 @@ nav {
   height: 92px;
 }
 
-.navbar-light .navbar-brand {
+.logo {
   color: #35b5fa;
   font-size: 24px;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.main-menu ul li {
+  display: inline-block;
+}
+
+.main-menu ul li a {
   margin-right: 33px;
   color: #000;
   text-transform: capitalize;
   font-weight: 400;
   position: relative;
   transition: 0.5s ease-in-out;
+  padding: 34px 0;
+  display: block;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+.main-menu ul li a:hover {
   color: #333;
+  text-decoration: none;
 }
 
-.navbar-light .navbar-nav .nav-link::after {
+.main-menu ul li a::after {
   content: "";
   bottom: 0;
   left: 0;
@@ -53,12 +60,12 @@ nav {
   transition: 0.5s ease-in-out;
 }
 
-.navbar-light .navbar-nav .nav-link:hover::after {
+.main-menu ul li a:hover::after {
   width: 100%;
 }
 
 .download {
-  padding: 10px 32px;
+  padding: 10px 25px;
   border: none;
   color: #fff;
   border-radius: 50px;
@@ -108,8 +115,16 @@ nav {
   animation: bounce 2s ease-in-out infinite;
 }
 
+.elipse-right {
+  transform: rotate(0deg);
+  animation: spin 5s linear infinite;
+  position: absolute;
+  top: 7%;
+  right: 0;
+}
+
 .hero-text {
-  margin-top: 14px;
+  margin: 14px 0 77px 0;
 }
 
 .hero-text h1 {
@@ -128,12 +143,12 @@ nav {
   letter-spacing: 2px;
 }
 
-.woman img {
-  width: 604px;
-  height: 604px;
+/* .woman img {
+  /* width: 604px;
+  height: 604px; */
 }
 
-.hero-cta {
+*/ .hero-cta {
   margin-top: 78px;
 }
 
@@ -265,8 +280,32 @@ nav {
   }
 }
 
+@keyframes spin {
+  /* 0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  } */
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 300px) and (max-width: 1300px) {
   .woman img {
     visibility: hidden;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .woman img {
+    visibility: hidden;
+  }
+
+  #hero {
+    height: 200px;
   }
 }

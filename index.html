@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/meanmenu.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -16,34 +17,29 @@
   </div>
   <section id="header">
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Why omega</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Computer Browsers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Mobile App</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Downloads</a>
-            </li>
-          </ul>
+      <div class="row">
+        <div class="col-xl-2 col-lg-2 col-md-2 d-flex align-items-center">
+          <div class="logo ">
+            <a href="#">Logo</a>
+          </div>
+        </div>
+        <div class="col-xl-8 col-lg-8 col-md-8">
+          <div class="main-menu">
+            <nav id="mobile-menu">
+              <ul class="text-right">
+                <li><a href="#">why omega</a></li>
+                <li><a href="#">features</a></li>
+                <li><a href="#">computer browsers</a></li>
+                <li><a href="#">mobile apps</a></li>
+                <li><a href="#">downloads</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 d-flex align-items-center">
           <a href="#" class="download" type="submit">Download Now</a>
         </div>
-      </nav>
+      </div>
     </div>
   </section>
   <section id="hero-bg">
@@ -55,7 +51,7 @@
               <img src="images/Elipses.png" alt="" />
             </div>
             <div class="hero-text ">
-              <h1>Browse the way you want</h1>
+              <h1 class="animated fadeInLeft">Browse the way you want</h1>
               <p>Omega isn't just a browser. it's an awesome browser</p>
             </div>
             <div class="hero-cta">
@@ -64,8 +60,11 @@
             </div>
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6">
+            <div class="elipse-right">
+              <img src="images/elipses-right.png" alt="" />
+            </div>
             <div class="woman" id="woman">
-              <img src="images/women.png" alt="" />
+              <img src="images/women.png" alt="" class="img-fluid" />
             </div>
           </div>
         </div>
@@ -74,12 +73,10 @@
   </section>
 
   <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery.meanmenu.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
-  <script>
-    new WOW().init();
-  </script>
 
 </body>
 
