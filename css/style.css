@@ -100,8 +100,7 @@ nav {
 
 #hero {
   background: url(../images/hero-bg.png) no-repeat center center;
-  background-size: contain;
-  height: 100vh;
+  background-size: cover;
 }
 
 .elipse {
@@ -131,7 +130,7 @@ nav {
 
 .woman img {
   width: 604px;
-  height: 607px;
+  height: 604px;
 }
 
 .hero-cta {
