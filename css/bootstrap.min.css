@@ -506,9 +506,9 @@ pre code {
     max-width: 720px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1500px) {
   .container {
-    max-width: 960px;
+    max-width: 1500px;
   }
 }
 @media (min-width: 1600px) {
